@@ -20,23 +20,6 @@ The script performs the following:
 
 ---
 
-## Methodology Summary
-
-### 1. **Stationarity Testing**
-- Ensures the time series is stable over time.
-- A series is **stationary** if:
-  - ADF p-value < 0.05 (rejects null of non-stationarity)
-  - KPSS p-value ≥ 0.05 (fails to reject null of stationarity)
-
-### 2. **Cointegration Testing**
-- Determines if non-stationary series move together in the long run.
-- If cointegration exists, a VECM (not just a VAR) is appropriate.
-
-### 3. **Vector Error Correction Model (VECM)**
-- Captures short-run dynamics and long-run relationships between the protocols' TVLs.
-- Includes an **error correction term (ECT)** that adjusts deviations from equilibrium.
-
----
 ## Time Series Analysis Interpretation Table
 
 | Step | Test / Component             | Null Hypothesis (H₀)                                              | Significance Level | Decision Criteria                          | Outcome Options                        | Conclusion                                                                 |
